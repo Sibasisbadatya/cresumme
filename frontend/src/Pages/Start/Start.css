@@ -1,0 +1,100 @@
+html {
+    font-size: 62.5%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-start {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 8rem;
+    margin: auto;
+    margin-top: 5rem;
+    background-color: #d2dae2;
+}
+
+.start-main {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+}
+
+.start-old {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+}
+
+.start-button {
+    margin-top: 2rem;
+    background-color: aquamarine;
+}
+
+.enter-text {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1120px) {
+    .start-main {
+        font-size: 2rem;
+    }
+
+    .start-old {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .start-main {
+        font-size: 1.5rem;
+    }
+
+    .start-old {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .main-start {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-start {
+        justify-content: space-around;
+        padding: 1rem;
+        height: 60vh;
+    }
+
+    .start-main {
+        font-size: 1rem;
+        width: 95%;
+        height: 40%;
+        font-size: 2rem;
+        background-color: burlywood;
+        padding: 2rem;
+    }
+
+    .start-old {
+        font-size: 1rem;
+        height: 40%;
+        width: 95%;
+        font-size: 1.8rem;
+        padding: 2rem;
+        background-color: burlywood;
+        margin-top: 3rem;
+    }
+
+    .enter-text {
+        margin-top: 0.5rem;
+    }
+
+    .start-button {
+        margin-top: 0.5rem;
+    }
+}

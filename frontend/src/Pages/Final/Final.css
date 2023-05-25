@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Encode+Sans+Condensed:wght@200&family=Gideon+Roman&family=Magra&family=Neucha&family=PT+Sans&family=PT+Serif&family=Poppins:wght@500&family=Staatliches&display=swap');
+
+.final-resume {
+    height: 100vh;
+    width: 100vw;
+    padding: 5rem;
+    position: relative;
+    margin: auto;
+}
+
+.head-resume {
+    min-height: fit-content;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-info {
+    height: 100%;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+
+.left-info>b {
+    font-size: 3rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.left-info>span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'EB Garamond', serif;
+}
+
+.left-info>p {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'EB Garamond', serif;
+}
+
+.right-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 49%;
+}
+
+.right-info>a {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    color: black;
+    font-family: 'EB Garamond', serif;
+}
+
+.body-resume {
+    min-height: 75%;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.edu-resume {
+    min-height: fit-content;
+    width: 90%;
+}
+
+.ind-edu-res {
+    height: 8vh;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ind-edu-res>li {
+    width: 50%;
+    height: 40%;
+    list-style: none;
+}
+
+.edgrade {
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'EB Garamond', serif;
+}
+
+.edloc {
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.eddeg {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.edname {
+    font-size: 1.5rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.project-resume {
+    min-height: fit-content;
+    width: 90%;
+}
+
+.ind-pro-res {
+    min-height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ind-pro-res>li {
+    list-style: none;
+    font-family: 'EB Garamond', serif;
+
+}
+
+.ind-pro-res>a {
+    color: black;
+    cursor: pointer;
+    font-family: 'EB Garamond', serif;
+    text-decoration: none;
+}
+
+.profname {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+
+}
+
+.progit {
+    font-size: 1.5rem;
+    font-family: 'EB Garamond', serif;
+
+}
+
+.prohost {
+    font-size: 1.5rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.prodescpr {
+    font-size: 1.5rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.skill-resume {
+    min-height: fit-content;
+    width: 90%;
+    display: flex;
+}
+
+.ind-pro-skill {
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 6vh;
+    min-width: fit-content;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.proheading {
+    font-size: 2.5rem;
+    font-family: 'EB Garamond', serif;
+    text-underline-position: under;
+}
+
+.linkpro {
+    outline: none;
+}
+
+.linktext {
+    border-bottom: 1px solid black;
+}
+
+hr {
+    border: 2px solid #1e272e;
+}
+
+.printbtn {
+    height: 6vh;
+    width: 10vw;
+    background-color: rgb(58, 239, 109);
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+}
+
+@media screen and (max-width:500px) {
+    .final-resume {
+        padding: 0.2rem;
+    }
+
+    .head-resume {
+        width: 100%;
+        padding: 0.2rem;
+    }
+
+    .printbtn {
+        position: absolute;
+        top: 95vh;
+        right: 0.5rem;
+        height: 5vh;
+        width: 20vw;
+        font-size: 1.5rem;
+    }
+
+    .body-resume {
+        padding: 0rem 1rem;
+    }
+
+    .proheading {
+        font-size: 1.2rem;
+    }
+
+    .ind-edu-res {
+        height: 5vh;
+        margin-bottom: 0rem;
+    }
+
+    .eddeg, .edgrade {
+        font-size: 1.2rem;
+    }
+
+    .edname, .edloc {
+        font-size: 0.8rem;
+    }
+
+    .ind-pro-res {
+        min-height: fit-content;
+        margin-bottom: 0rem;
+    }
+
+    .profname {
+        font-size: 1.2rem;
+    }
+
+    .progit, .prohost, .prodescpr {
+        font-size: 0.8rem;
+    }
+
+    .skill-resume {
+        min-height: fit-content;
+    }
+
+    .ind-pro-skill {
+        font-size: 1.2rem;
+        font-weight: bold;
+        height: 3vh;
+        margin: 0.2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.1rem 0.5rem;
+    }
+}

@@ -1,0 +1,80 @@
+.alert {
+    height: 40vh;
+    width: 70vw;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 10vh;
+    position: relative;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.alert>.note {
+    height: 20%;
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.alert>.notes {
+    height: 60%;
+    width: 90%;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.alert>button {
+    height: 15%;
+    margin-top: 1rem;
+    width: 18%;
+    margin-left: 70%;
+    border: none;
+    background-color: burlywood;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 5px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+@media screen and (max-width: 980px) {
+    .alert {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .alert {
+        height: 70vh;
+    }
+
+    .alert>button {
+        height: 10%;
+        width: 30%;
+        margin-left: 70%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .alert {
+        height: 80vh;
+    }
+
+    .alert>button {
+        height: 8%;
+        width: 25%;
+        margin-left: 70%;
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .alert {
+        height: 80vh;
+        font-size: 1rem;
+    }
+
+    .alert>button {
+        height: 8%;
+        width: 28%;
+        margin-left: 70%;
+        margin-top: 4.5rem;
+    }
+    .notes{
+        font-size: 1.5rem;
+    }
+}
