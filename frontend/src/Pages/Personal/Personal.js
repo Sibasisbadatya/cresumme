@@ -58,25 +58,24 @@ const Personal = () => {
                 </div>
                 <div className='left-content'>
                     <div className='input'>  <label htmlFor="name">Name:</label>
-                        <TextField className='inf' id="outlined-basic" label="Name" variant="outlined" name='name' value={user.name} onChange={handleInput} /></div>
+                        <TextField className='inf' id="outlined-basic" variant="outlined" name='name' value={user.name} onChange={handleInput} /></div>
                     <div className="input">    <label htmlFor="adress">Adress:</label>
-                        <TextField className='inf' id="outlined-basic" label="Adress" variant="outlined"
+                        <TextField className='inf' id="outlined-basic" variant="outlined"
                             name='adress' value={user.adress} onChange={handleInput} /></div>
                     <div className="input">  <label htmlFor="contact">Contact:</label>
-                        <TextField className='inf' id="outlined-basic" label="Contact" variant="outlined"
+                        <TextField className='inf' id="outlined-basic" variant="outlined"
                             name='contact' value={user.contact} onChange={handleInput} /></div>
-
                 </div>
                 <div className='right-content'>
                     <div className="input">  <label htmlFor="email">Email:</label>
-                        <TextField className='inf' id="outlined-basic" label="Email" variant="outlined"
+                        <TextField className='inf' id="outlined-basic" variant="outlined"
                             name='email' value={user.email} onChange={handleInput} /></div>
                     <div className="input">  <label htmlFor="github">Github link:</label>
-                        <TextField className='inf' id="outlined-basic" label="Github" variant="outlined"
+                        <TextField className='inf' id="outlined-basic" variant="outlined"
                             name='github' value={user.github} onChange={handleInput} /></div>
                     <div className="input">  <label htmlFor="linkedin">LinkedIn Link:</label>
-                        <TextField className='inf' id="outlined-basic" label="LinkedIn" variant="outlined"
-                            name='linkedin' value={user.linkedin} onChange={handleInput} /></div>
+                        <TextField className='inf' id="outlined-basic" variant="outlined"
+                            name='linkedin'  value={user.linkedin} onChange={handleInput} /></div>
                 </div>
             </div>
             <div className='about'>

@@ -57,13 +57,16 @@ body {
 
 label {
     font-size: 1.5rem;
-    align-self: flex-start;
-    justify-self: flex-start;
+    /* align-self: flex-start; */
+    /* justify-self: flex-start; */
     margin-bottom: 5px;
     margin-left: 4.5rem;
 }
 
-.inf,
+#outlined-basic {
+    font-size: 1.5rem;
+}
+
 .inf::placeholder {
     width: 80%;
     font: 5rem;

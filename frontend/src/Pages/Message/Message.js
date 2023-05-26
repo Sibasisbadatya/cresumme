@@ -7,6 +7,7 @@ const Message = () => {
     }
     return (
         <>
+        <div className='main-alert'>
             <div className='alert'>
                 <div className='note'><strong>Note -----</strong></div>
                 <div className='notes'>
@@ -14,6 +15,7 @@ const Message = () => {
                     <li>If want to continue your existing resume then paste the 'Unique Id' generated for that resume which was shown in right top corner of old resume page.  </li>
                 </div>
                 <button className='continue' onClick={start}>Continue</button>
+            </div>
             </div>
         </>
     )
