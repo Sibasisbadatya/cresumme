@@ -27,7 +27,7 @@ const Modal = (props) => {
                     <input type="text" value={props.adr} onChange={props.inpadress} />
                 </div>
                 <div className="modal-inputarea">  <label htmlFor="name">Grade :</label>
-                    <textarea type="text" value={props.grd} onChange={props.inpgrade} />
+                    <input type="text" value={props.grd} onChange={props.inpgrade} />
                 </div>
                 {/* pname={pname} pdescr={pdescr} pgithublink={pgithublink} phostlink={phostlink} */}
                 <div className='save-back-btn'>

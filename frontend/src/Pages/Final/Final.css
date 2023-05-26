@@ -210,9 +210,9 @@ hr {
 }
 
 .printbtn {
-    height: 6vh;
-    width: 10vw;
-    background-color: rgb(58, 239, 109);
+    height: 4vh;
+    width: 7vw;
+    background-color: rgb(187, 187, 191);
     position: absolute;
     top: 3rem;
     right: 5rem;
