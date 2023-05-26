@@ -3,7 +3,7 @@
 .final-resume {
     height: 100vh;
     width: 100vw;
-    padding: 5rem;
+    padding: 2rem;
     position: relative;
     margin: auto;
 }
@@ -82,7 +82,7 @@
     flex-wrap: wrap;
     position: relative;
     padding-left: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 
 .ind-edu-res>li {
