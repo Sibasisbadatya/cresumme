@@ -1,0 +1,901 @@
+html {
+    overflow-x: hidden;
+}
+
+.mainbg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #747d8c;
+    opacity: 0.5;
+}
+
+.textarea {
+    width: 50vw;
+    min-height: 30vh;
+    height: max-content;
+    margin: auto;
+}
+
+.savebtn {
+    height: 4rem;
+    width: 8rem;
+    float: right;
+}
+
+.mainnote {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 2rem;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.mainnote>h1 {
+    height: 10vh;
+    font-size: 4rem;
+}
+
+.mainnote>.modal-input {
+    height: 5vh;
+    display: flex;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.mainnote>.modal-input>input {
+    height: 90%;
+    margin-left: 4rem;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #1B1464;
+    font-size: 2rem;
+}
+
+.mainnote>.modal-inputarea {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 2rem;
+}
+
+.mainnote>.modal-inputarea>textarea {
+    height: 90%;
+    width: 90%;
+}
+
+.save-back-btn {
+    height: 5vh;
+    width: 20vw;
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainNotediv {
+    margin-top: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 3rem;
+    height: 85vh;
+    width: 90vw;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.mainNotedivS {
+    margin-top: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 3rem;
+    height: 85vh;
+    width: 90vw;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.indnote {
+    width: 30%;
+    min-height: 40%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #70a1ff;
+    border-radius: 0.3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.indnotedu {
+    width: 70%;
+    min-height: fit-content;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #70a1ff;
+    border-radius: 0.3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.datasedu {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.datasedu>li {
+    list-style: none;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.datasedu>li>b {
+    font-size: 4rem;
+}
+
+.eddeg {
+    width: 100%;
+    height: 35%;
+    font-size: 4rem;
+}
+
+.edname {
+    width: 100%;
+    height: 30%;
+    font-size: 3rem;
+}
+
+.edloc {
+    width: 70%;
+    height: 30%;
+    font-size: 3rem;
+}
+
+.edgrade {
+    height: 30%;
+    width: 30%;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.indnote-skill {
+    width: 45%;
+    height: 20%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #70a1ff;
+    border-radius: 0.3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.indnote-skill>.dataski {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    padding-left: 6rem;
+    align-items: center;
+    font-size: 4rem;
+    margin: auto;
+    font-weight: bolder;
+}
+
+.dataski>li {
+    list-style: none;
+}
+
+.indnote-skill>.delandedit {
+    height: 30%;
+    width: 18%;
+}
+
+.indnotep {
+    width: 70%;
+    min-height: fit-content;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: #70a1ff;
+    border-radius: 0.3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.datas {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    padding: 0rem 2rem;
+    left: 1rem;
+    flex-wrap: wrap;
+}
+
+.pfname {
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+    text-shadow: 1px 1px solid black;
+    height: 15%;
+    width: 90%;
+    border-bottom: solid 2px #1B1464;
+    list-style: none;
+}
+
+.lip {
+    font-weight: bold;
+    height: 40%;
+    width: 90%;
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.datas>.po {
+    list-style: none;
+    height: 15%;
+    width: 40%;
+    margin-right: 3rem;
+    border-bottom: solid 2px #1B1464;
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.po>a {
+    color: black;
+}
+
+.delandedit {
+    height: 8%;
+    width: 20%;
+    position: absolute;
+    right: 1px;
+    display: flex;
+    align-self: flex-end;
+}
+
+/* ***************** */
+/* .delandedit-edu {} */
+
+/* **************** */
+.addnotebtn {
+    position: absolute;
+    float: right;
+
+}
+
+.addIcon {
+    height: 10vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 4rem;
+    align-items: center;
+    display: flex;
+    margin-right: 5rem;
+}
+
+.addIcon>span {
+    width: 45rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background-color: #5352ed;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.addIcon>.ctcb {
+    height: 8rem;
+    width: 60rem;
+    /* background-color: #747d8c; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+
+.addIcon1 {
+    height: 10vh;
+    width: 80vw;
+    margin: auto;
+    position: absolute;
+    top: 2rem;
+    font-size: 4rem;
+    align-items: center;
+    display: flex;
+    margin-right: 5rem;
+}
+
+.addIcon1>span {
+    width: 45rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background-color: #5352ed;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.addIcon1>.ctcb {
+    height: 8rem;
+    width: 60rem;
+    /* background-color: #747d8c; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.ctcb>b {
+    font-size: 2rem;
+    height: 90%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5352ed;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.ctcb>.buttonc {
+    width: 8rem;
+    height: 5rem;
+    background-color: #5352ed;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    font-size: 2rem;
+}
+
+.addnoteicon {
+    color: #5352ed;
+    height: 100px;
+    width: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 50%;
+}
+
+/* *********************** */
+.nest-page {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    height: 5rem;
+    width: 12rem;
+    background-color: #5256de;
+    border: none;
+    border-radius: 1rem;
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+@media screen and (max-width:1020px) {
+    .nest-page {
+        bottom: 1.5rem;
+        right: 2rem;
+        height: 4rem;
+        width: 8rem;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 15px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+
+    .addIcon1 {
+        height: 10vh;
+        width: 80vw;
+        margin: auto;
+        position: absolute;
+        top: 2rem;
+        font-size: 4rem;
+        align-items: center;
+        display: flex;
+        margin-right: 5rem;
+    }
+
+    .addIcon1>span {
+        height: 6rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .addIcon1>.ctcb {
+        height: 6rem;
+    }
+
+    .ctcb>b {
+        font-size: 1.5rem;
+        height: 90%;
+        width: 60%;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .nest-page {
+        bottom: 1.5rem;
+        right: 2rem;
+        height: 4rem;
+        width: 8rem;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 15px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+
+    .addIcon1 {
+        height: 10vh;
+        width: 80vw;
+        margin: auto;
+        position: absolute;
+        top: 2rem;
+        font-size: 4rem;
+        align-items: center;
+        display: flex;
+        margin-right: 5rem;
+    }
+
+    .addIcon1>span {
+        height: 6rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .addIcon1>.ctcb {
+        height: 6rem;
+    }
+
+    .ctcb>b {
+        font-size: 1.5rem;
+        height: 90%;
+        width: 60%;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .addIcon {
+        height: 10vh;
+        width: 80vw;
+        margin: auto;
+        position: absolute;
+        top: 2rem;
+        font-size: 4rem;
+        align-items: center;
+        display: flex;
+        margin-right: 5rem;
+    }
+
+    .addIcon>span {
+        height: 6rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .addIcon>.ctcb {
+        height: 6rem;
+    }
+
+    .ctcb>b {
+        font-size: 1.5rem;
+        height: 90%;
+        width: 60%;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .nest-page {
+        bottom: 1.5rem;
+        right: 2rem;
+        height: 4rem;
+        width: 8rem;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 15px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+
+    .addIcon1 {
+        height: 10vh;
+        width: 80vw;
+        margin: auto;
+        position: absolute;
+        top: 2rem;
+        font-size: 4rem;
+        align-items: center;
+        display: flex;
+        margin-right: 5rem;
+    }
+
+    .addIcon1>span {
+        height: 4.5rem;
+        width: 30rem;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .addIcon1>.ctcb {
+        height: 5rem;
+        margin-left: 2rem;
+    }
+
+    .ctcb>b {
+        font-size: 1.5rem;
+        height: 90%;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        text-overflow: ellipsis;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .addIcon {
+        height: 10vh;
+        width: 80vw;
+        margin: auto;
+        position: absolute;
+        top: 2rem;
+        font-size: 4rem;
+        align-items: center;
+        display: flex;
+        margin-right: 5rem;
+    }
+
+    .addIcon>span {
+        height: 4.5rem;
+        width: 30rem;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .addIcon>.ctcb {
+        height: 5rem;
+    }
+
+    .ctcb>b {
+        font-size: 1.5rem;
+        height: 90%;
+        width: 80%;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .ctcb>.buttonc {
+        width: 8rem;
+        height: 4.5rem;
+        background-color: #5352ed;
+        border-radius: 1rem;
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:545px) {
+    .main {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nest-page {
+        bottom: 1.5rem;
+        right: 2rem;
+        height: 6rem;
+        width: 14rem;
+        font-size: 3rem;
+    }
+
+    .addIcon1 {
+        align-items: center;
+        height: 20rem;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100vw;
+        position: absolute;
+        top: 2rem;
+    }
+
+    .addIcon1>span {
+        height: 30%;
+        padding: 5px;
+        width: 40rem;
+        font-size: 3rem;
+        margin-left: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .addIcon1>.ctcb {
+        height: 20rem;
+        height: 5rem;
+        margin-left: 60%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ctcb>b {
+        /* position: absolute; */
+        font-size: 2rem;
+        height: 8rem;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        text-overflow: ellipsis;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .addIcon {
+        align-items: center;
+        height: 20rem;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100vw;
+        position: absolute;
+        top: 2rem;
+    }
+
+    .addIcon>span {
+        height: 30%;
+        padding: 5px;
+        width: 40rem;
+        font-size: 3rem;
+        margin-left: 10%;
+        margin-bottom: 1rem;
+    }
+
+    .addIcon>.ctcb {
+        height: 5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ctcb>b {
+        font-size: 1.5rem;
+        height: 90%;
+        width: 60%;
+        font-size: 2rem;
+        border-radius: 1rem;
+        margin-left: 8rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .ctcb>.buttonc {
+        width: 8rem;
+        height: 4.5rem;
+        width: 15%;
+        background-color: #5352ed;
+        border-radius: 1rem;
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+
+    .left-content {
+        position: absolute;
+        height: 50rem;
+        width: 70rem;
+        left: 2rem;
+        top: 25rem;
+    }
+
+    .right-content {
+        position: absolute;
+        height: 50rem;
+        width: 70rem;
+        left: 2rem;
+        top: 80rem;
+    }
+
+    .main>.left-content>.input {
+        width: 60rem;
+        height: 15rem;
+        position: relative;
+    }
+
+    .main>.right-content>.input {
+        width: 60rem;
+        height: 15rem;
+        position: relative;
+    }
+
+    .about {
+        position: absolute;
+        top: 135rem;
+        left: 2rem;
+    }
+
+    .input>label {
+        height: 30%;
+        font-size: 2rem;
+    }
+
+    .inf {
+        height: 70%;
+        width: 80%;
+    }
+
+    .mainnote {
+        width: 90%;
+    }
+
+    .mainnote>h1 {
+        height: 10vh;
+        font-size: 4rem;
+    }
+
+    .mainnote>.modal-input {
+        height: 5vh;
+        display: flex;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .mainnote>.modal-input>input {
+        height: 90%;
+        margin-left: 4rem;
+        outline: none;
+        border: none;
+        border-bottom: solid 2px #1B1464;
+        font-size: 2rem;
+    }
+
+    .mainnote>.modal-inputarea {
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        font-size: 2rem;
+    }
+
+    .mainnote>.modal-inputarea>textarea {
+        height: 90%;
+        width: 90%;
+    }
+
+    .save-back-btn {
+        height: 5vh;
+        width: 20vw;
+        margin-top: 2rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mainNotediv {
+        margin: auto;
+        flex-direction: column;
+        margin-left: 4rem;
+        margin-top: 20rem;
+        padding: 0.5rem 0rem;
+        height: 85vh;
+        width: 95vw;
+        position: relative;
+        justify-content: flex-start;
+    }
+
+    .mainNotedivS {
+        margin-top: 20px;
+        position: absolute;
+        top: 20rem;
+        margin: auto;
+        margin-left: 6rem;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .save-back-btn {
+        height: 3vh;
+        width: 43vw;
+        margin-top: 2rem;
+    }
+
+    .svedbtn {
+        height: 100%;
+        width: 90%;
+        margin-right: 3rem;
+    }
+
+    .indnotep {
+        width: 100%;
+        min-height: 30vh;
+        padding-left: 1rem;
+    }
+
+    .indnotedu {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .datas {
+        background-color: aquamarine;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .delandedit {
+        height: 5rem;
+    }
+
+    .datas>.po {
+        width: 90%;
+    }
+
+    .indnote-skill {
+        height: 15%;
+        width: 90%;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .ctcb>b {
+        font-size: 1.5rem;
+        height: 90%;
+        width: 48%;
+        font-size: 2rem;
+        border-radius: 1rem;
+        margin-left: 10rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+}
