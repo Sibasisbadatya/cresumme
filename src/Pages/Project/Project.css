@@ -64,16 +64,19 @@ html {
 }
 
 .mainnote>.modal-inputarea {
-    height: 20vh;
+    height: 5vh;
     display: flex;
-    flex-direction: column;
     position: relative;
-    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
-.mainnote>.modal-inputarea>textarea {
+.mainnote>.modal-inputarea>input {
     height: 90%;
-    width: 90%;
+    margin-left: 4rem;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #1B1464;
+    font-size: 2rem;
 }
 
 .save-back-btn {

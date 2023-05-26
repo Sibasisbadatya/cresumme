@@ -3,7 +3,7 @@
 .final-resume {
     height: 100vh;
     width: 100vw;
-    padding: 1rem;
+    padding: 2rem;
     position: relative;
     margin: auto;
 }
@@ -82,6 +82,7 @@
     flex-wrap: wrap;
     position: relative;
     padding-left: 1rem;
+    margin-bottom: 0rem;
 }
 
 .ind-edu-res>li {
@@ -186,11 +187,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.5rem 2rem;
     font-family: 'EB Garamond', serif;
 }
 
 .proheading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'EB Garamond', serif;
     text-underline-position: under;
 }
@@ -209,11 +211,11 @@ hr {
 
 .printbtn {
     height: 4vh;
-    width: 8vw;
-    background-color: rgb(58, 239, 109);
+    width: 7vw;
+    background-color: rgb(187, 187, 191);
     position: absolute;
-    top: 2rem;
-    right: 3rem;
+    top: 3rem;
+    right: 5rem;
 }
 
 @media screen and (max-width:500px) {

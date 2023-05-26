@@ -38,6 +38,9 @@ const Final = () => {
         console.log(personalData);
         console.log(educationData);
     }
+    const Printalert = () => {
+        alert("Check if the content are in same page and responsive");
+    }
     useEffect(() => {
         getElem();
     }, [resumeData]);
@@ -83,7 +86,7 @@ const Final = () => {
                                 return (
                                     <>
                                         <div className='ind-pro-res'>
-                                            <u className='profname'><span>{key + 1}.{elem.pname}</span></u>
+                                            <li className='profname'><span>{key + 1}.{elem.pname}</span></li>
                                             <a href={elem.pgithublink} className='progit'><span><GitHubIcon /><b className='linkpro'>Github link:</b> <span className='linktext'>{elem.pgithublink}</span></span></a>
                                             <a herf={elem.phostlink} className='prohost'><span><LanguageIcon /> <b className='linkpro'>Hosted link:</b><span className='linktext'> {elem.phostlink}</span></span></a>
                                             <li className='prodescpr'><span><b>Description:</b> {elem.pdescr}</span></li>
@@ -96,11 +99,11 @@ const Final = () => {
                     <b className='proheading'><u>Skills</u></b>
                     <div className='skill-resume' >
                         {
-                            skillData.map((elem,key) => {
+                            skillData.map((elem, key) => {
                                 return (
                                     <>
                                         <div className='ind-pro-skill'>
-                                           {key+1+"."} {elem.skill}
+                                            {key + 1 + "."} {elem.skill}
                                         </div>
                                     </>
                                 )
@@ -109,7 +112,7 @@ const Final = () => {
                     </div>
                 </div>
             </div>
-            <ReactPrint trigger={() => <button className='printbtn'>Print</button>} content={() => ref.current} />
+            <ReactPrint trigger={() => <button className='printbtn' onClick={Printalert}>Print</button>} content={() => ref.current} />
         </>
     )
 }

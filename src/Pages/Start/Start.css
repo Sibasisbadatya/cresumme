@@ -14,24 +14,31 @@ html {
     padding: 8rem;
     margin: auto;
     margin-top: 5rem;
-    background-color: #d2dae2;
 }
 
 .start-main {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #a29bfe;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .start-old {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #ff7675;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .start-button {
     margin-top: 2rem;
-    background-color: aquamarine;
+    background-color: #81ecec;
 }
 
 .enter-text {
@@ -76,7 +83,7 @@ html {
         width: 95%;
         height: 40%;
         font-size: 2rem;
-        background-color: burlywood;
+        background-color: #a29bfe;
         padding: 2rem;
     }
 
@@ -86,7 +93,7 @@ html {
         width: 95%;
         font-size: 1.8rem;
         padding: 2rem;
-        background-color: burlywood;
+        background-color: #ff7675;
         margin-top: 3rem;
     }
 

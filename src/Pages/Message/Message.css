@@ -1,11 +1,18 @@
+.main-alert{
+    height: 100vh;
+    width: 100vw;
+    background-color: #7ed6df;
+    display: flex;
+    position: relative;
+}
 .alert {
     height: 40vh;
     width: 70vw;
-    background-color: aquamarine;
+    background-color: #22a6b3;
     margin: auto;
     margin-top: 10vh;
     position: relative;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .alert>.note {
@@ -29,7 +36,8 @@
     width: 18%;
     margin-left: 70%;
     border: none;
-    background-color: burlywood;
+    color: white;
+    background-color: #273c75;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 5px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
