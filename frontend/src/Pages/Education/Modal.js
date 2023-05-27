@@ -17,16 +17,16 @@ const Modal = (props) => {
                     borderBottom: "4px solid #1B9CFC",
                 }
                 }>Add Your</span> Projects</h1>
-                <div className='modal-input'>     <label htmlFor="name" >Degree :</label>
+                <div className='modal-input'>     <label htmlFor="name" >Degree</label>
                     <input type="text" value={props.deg} onChange={props.inpdegree} />
                 </div>
-                <div className="modal-input"> <label htmlFor="name">Institute name :</label>
+                <div className="modal-input"> <label htmlFor="name">Institute name</label>
                     <input type="text" value={props.edu} onChange={props.inpname} />
                 </div>
-                <div className="modal-input">  <label htmlFor="name">Adress :</label>
+                <div className="modal-input">  <label htmlFor="name">Adress</label>
                     <input type="text" value={props.adr} onChange={props.inpadress} />
                 </div>
-                <div className="modal-inputarea">  <label htmlFor="name">Grade :</label>
+                <div className="modal-input">  <label htmlFor="name">Grade</label>
                     <input type="text" value={props.grd} onChange={props.inpgrade} />
                 </div>
                 {/* pname={pname} pdescr={pdescr} pgithublink={pgithublink} phostlink={phostlink} */}
@@ -47,7 +47,6 @@ const Modal = (props) => {
                     }}
                         onClick={props.closeNote}>Back &nbsp;</Button>
                 </div>
-
             </div>
         </>
     )

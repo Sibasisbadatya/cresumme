@@ -169,7 +169,7 @@ const Project = () => {
                 <br /><br />
                 {showNote && <Modal closeNote={closeNote} name={pname} descr={pdescr} git={pgithublink} host={phostlink} inpname={itemname} inpdescr={itemdescr} inpgit={itemgit} inphost={itemhost} addlist={addList} tobeupdate={pretask} />}
             </div>
-            <div className="mainNotediv">
+            <div className="mainNotedivP">
                 {
                     list.map((elem, index) => {
                         return (

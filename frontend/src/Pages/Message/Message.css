@@ -1,10 +1,11 @@
-.main-alert{
+.main-alert {
     height: 100vh;
     width: 100vw;
     background-color: #7ed6df;
     display: flex;
     position: relative;
 }
+
 .alert {
     height: 40vh;
     width: 70vw;
@@ -30,7 +31,7 @@
     font-size: 2rem;
 }
 
-.alert>button {
+.alert>.continue {
     height: 15%;
     margin-top: 1rem;
     width: 18%;
@@ -52,37 +53,48 @@
         height: 70vh;
     }
 
-    .alert>button {
+    .alert>.continue {
         height: 10%;
         width: 30%;
         margin-left: 70%;
     }
 }
+
 @media screen and (max-width: 500px) {
     .alert {
         height: 80vh;
     }
 
-    .alert>button {
+    .alert>.note {
+        height: 12%;
+    }
+
+    .alert>.continue {
         height: 8%;
-        width: 25%;
-        margin-left: 70%;
-        margin-top: 3rem;
+        width: 40%;
+        margin-right: 2rem;
+        margin-top: 1rem;
     }
 }
+
 @media screen and (max-width: 450px) {
     .alert {
         height: 80vh;
         font-size: 1rem;
     }
 
-    .alert>button {
+    .alert>.note {
+        height: 12%;
+    }
+
+    .alert>.continue {
         height: 8%;
-        width: 28%;
-        margin-left: 70%;
+        width: 40%;
+       margin-left: 15rem;
         margin-top: 4.5rem;
     }
-    .notes{
+
+    .notes {
         font-size: 1.5rem;
     }
 }

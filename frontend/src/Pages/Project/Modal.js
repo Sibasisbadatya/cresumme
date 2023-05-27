@@ -17,21 +17,21 @@ const Modal = (props) => {
                     borderBottom: "4px solid #1B9CFC",
                 }
                 }>Add Your</span> Projects</h1>
-                <div className='modal-input'>     <label htmlFor="name" >Project Name :</label>
+                <div className='modal-input'>     <label htmlFor="name" >Project Name</label>
                     <input type="text" value={props.name} onChange={props.inpname} />
                 </div>
-                <div className="modal-input"> <label htmlFor="name">Github Link :</label>
+                <div className="modal-input"> <label htmlFor="name">Github Link</label>
                     <input type="text" value={props.git} onChange={props.inpgit} />
                 </div>
-                <div className="modal-input">  <label htmlFor="name">Hosted Link(if any) :</label>
+                <div className="modal-input">  <label htmlFor="name">Hosted Link(if any) </label>
                     <input type="text" value={props.host} onChange={props.inphost} />
                 </div>
-                <div className="modal-inputarea">  <label htmlFor="name">About Project(Skills used and working of project etc... *Optional) :</label>
+                <div className="modal-inputarea">  <label htmlFor="name">About Project(Skills used and working of project etc... *Optional)</label>
                     <textarea type="text" value={props.descr} onChange={props.inpdescr} />
                 </div>
                 {/* pname={pname} pdescr={pdescr} pgithublink={pgithublink} phostlink={phostlink} */}
                 <div className='save-back-btn'>
-                    <Button className='svedbtn' style={{
+                    <Button style={{
                         backgroundColor: "#3742fa",
                         color: "#FFFFFF",
                         fontSize: "18px",
@@ -39,7 +39,7 @@ const Modal = (props) => {
                     }}
                         // className='savebtn'
                         onClick={props.addlist}>Save &nbsp;<SaveIcon /></Button>
-                    <Button className='svedbtn' style={{
+                    <Button style={{
                         backgroundColor: "#3742fa",
                         color: "#FFFFFF",
                         fontSize: "18px",
@@ -47,7 +47,6 @@ const Modal = (props) => {
                     }}
                         onClick={props.closeNote}>Back &nbsp;</Button>
                 </div>
-
             </div>
         </>
     )

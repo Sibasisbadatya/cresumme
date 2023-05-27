@@ -37,11 +37,13 @@ html {
 }
 
 .start-button {
+    height: 25%;
     margin-top: 2rem;
     background-color: #81ecec;
 }
 
 .enter-text {
+    height: 25%;
     margin-top: 1rem;
 }
 

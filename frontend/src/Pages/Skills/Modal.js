@@ -16,8 +16,8 @@ const Modal = (props) => {
                 <h1 style={{ textAlign: "center" }}><span style={{
                     borderBottom: "4px solid #1B9CFC",
                 }
-                }>Add Your</span> Projects</h1>
-                <div className='modal-input'>     <label htmlFor="name" >Enter Your Skills :</label>
+                }>Enter Your</span> Skills</h1>
+                <div className='modal-input'><label className='labelsk' htmlFor="name" >Enter Your Skills :</label>
                     <input type="text" value={props.name} onChange={props.inpskill} />
                 </div>
                 {/* pname={pname} pdescr={pdescr} pgithublink={pgithublink} phostlink={phostlink} */}

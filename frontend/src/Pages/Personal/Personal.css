@@ -57,10 +57,14 @@ body {
 
 label {
     font-size: 1.5rem;
-    /* align-self: flex-start; */
-    /* justify-self: flex-start; */
     margin-bottom: 5px;
     margin-left: 4.5rem;
+}
+
+.labelsk {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-left: 2rem;
 }
 
 #outlined-basic {

@@ -38,6 +38,7 @@ html {
     z-index: 1;
     box-sizing: border-box;
     padding: 2rem;
+    padding-left: 2rem;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
@@ -828,10 +829,23 @@ html {
         margin-left: 4rem;
         margin-top: 20rem;
         padding: 0.5rem 0rem;
-        height: 85vh;
+        min-height: 85vh;
         width: 95vw;
         position: relative;
         justify-content: flex-start;
+        overflow: scroll;
+    }
+    .mainNotedivP {
+        margin: auto;
+        flex-direction: column;
+        margin-left: 4rem;
+        margin-top: 20rem;
+        padding: 0.5rem 0rem;
+        min-height: 85vh;
+        width: 95vw;
+        position: relative;
+        justify-content: flex-start;
+        overflow: scroll;
     }
 
     .mainNotedivS {
@@ -861,6 +875,7 @@ html {
         width: 100%;
         min-height: 30vh;
         padding-left: 1rem;
+        margin-bottom: 2rem;
     }
 
     .indnotedu {
