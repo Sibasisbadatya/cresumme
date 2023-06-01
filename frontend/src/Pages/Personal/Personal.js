@@ -75,7 +75,7 @@ const Personal = () => {
                             name='github' value={user.github} onChange={handleInput} /></div>
                     <div className="input">  <label htmlFor="linkedin">LinkedIn Link:</label>
                         <TextField className='inf' id="outlined-basic" variant="outlined"
-                            name='linkedin'  value={user.linkedin} onChange={handleInput} /></div>
+                            name='linkedin' value={user.linkedin} onChange={handleInput} /></div>
                 </div>
             </div>
             <div className='about'>

@@ -13,7 +13,7 @@ app.use(cors({
    optionSuccessStatus:200,
 }));
 
-// 4lkF1EytcYjKjTCE
+
 const port = process.env.PORT || 8000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -21,11 +21,6 @@ require("./DB/connection");
 app.use(require("./router/router"));
 dotenv.config()
 app.use(cookieParser());
-// app.use(express.static(path.join(__dirname1, "/frontend/build")));
-
-// app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname1, "frontend", "build", "index.html"));
-// });
 
 
 app.listen(port, () => {

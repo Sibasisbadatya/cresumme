@@ -13,9 +13,6 @@ const User = require("../models/registration");
 const Project = require("../models/project");
 const { log } = require("console");
 const ObjectID = require('mongodb').ObjectId;
-// const authenticate = require("../middleware/authenticate");
-// const Task = require("../models/todo");
-// let userRegistered;
 
 router.get("/", (req, res) => {
 
