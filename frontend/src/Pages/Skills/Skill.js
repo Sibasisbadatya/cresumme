@@ -66,7 +66,7 @@ const Project = () => {
             list.map(async (elem) => {
                 if (elem.id == temptask) {
                     console.log(elem.id);
-                    const res = await fetch("hhttps://cresume-backend.onrender.com/updateskills", {
+                    const res = await fetch("https://cresume-backend.onrender.com/updateskills", {
                         method: "PATCH",
                         headers: {
                             "Content-Type": "application/json"
